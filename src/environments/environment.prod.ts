@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   server: {
-    endpoint: 'https://still-mesa-75070.herokuapp.com/',
+    endpoint: 'https://still-mesa-75070.herokuapp.com',
     routes: {
       login: 'login',
       register: 'register',
