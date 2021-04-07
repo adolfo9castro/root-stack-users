@@ -1,0 +1,13 @@
+<form>
+    <h3>Login</h3>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" [(ngModel)]="email" name="email" class="form-control" placeholder="name@example.com" required="required">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="password" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="login()">Log in</button> or 
+    <a href="/register" class="btn btn-primary">Go to register</a>
+</form>

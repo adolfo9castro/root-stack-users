@@ -22,6 +22,9 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
+          "allowedCommonJsDependencies":[
+            "crypto-js"            
+          ],
           "options": {
             "outputPath": "dist/root-stack-users",
             "index": "src/index.html",
@@ -34,7 +37,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -73,6 +77,9 @@
           "options": {
             "browserTarget": "root-stack-users:build"
           },
+          "allowedCommonJsDependencies":[
+            "crypto-js"
+          ],
           "configurations": {
             "production": {
               "browserTarget": "root-stack-users:build:production"

@@ -1,0 +1,19 @@
+<form>
+    <h3>Register</h3>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" [(ngModel)]="email" name="email" class="form-control" placeholder="name@example.com"
+            required="required">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="password" name="password">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Repeat the Password</label>
+        <input type="password" class="form-control" [(ngModel)]="passwordConfirm" name="passwordConfirm">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="register()">Register</button> or 
+    <a href="/login" class="btn btn-primary">Go to log in</a>
+</form>
+
